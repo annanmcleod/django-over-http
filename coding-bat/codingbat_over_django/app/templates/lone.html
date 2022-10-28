@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Document</title
+ </head>
+ <body>
+    <form action="/lone-sum/" method="GET">
+        
+        <label>
+            <p>A</p>
+            <input type "text" name="a">
+        </label>
+
+        <label>
+            <p>B</p>
+            <input type "text" name="b">
+        </label>
+
+        <label>
+          <p>C</p>
+          <input type "text" name="c">
+      </label>
+
+        <div>
+        <button>Submit</button>
+        </div>
+        
+    </form> 
+
+    {% if result is not None%}
+      <p>{{result}}</p>
+    {% endif %}
+
+        
+ </body> 
+ </html>
